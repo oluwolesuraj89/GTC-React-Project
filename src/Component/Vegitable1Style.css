@@ -1,0 +1,14 @@
+.Section1{
+    display:flex;
+    justify-content: space-between;
+    background-color: green;
+    width: 100%;
+    padding-top: 100px;
+
+    /* margin-top: 10rem; */
+}
+#BagOfRic{
+    width: 448px;
+    height: 483;
+    padding:0 88px 0;
+}

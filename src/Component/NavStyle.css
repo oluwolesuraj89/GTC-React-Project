@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --solo-white: #FFFEF6;
+    --gray-white: #F5F2ED;
+    --white:  #FFFFFF;
+    --black: rgb(0, 0, 0);
+    --cart-green: #2F945C;
+    --Deep-Green: #0A371F;
+}
+.MainBody{
+    /* background-color: blue; */
+    width: 100%;
+    /* height:1000px; */
+    background-color: var(--white);
+    overflow: hidden;
+}
+.NavContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 88px;
+    width: 100%;
+    background-color:var(--solo-white);
+    position: fixed;
+}
+.NavContainer ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
+    /* background-color: green; */
+}
+.NavContainer ul a{
+    text-decoration: none;
+    color:var(--Deep-Green);
+    padding: 5px 10px;
+    margin: 0 15px;
+}
+.NavContainer ul a:hover{
+    background-color: var(--cart-green);
+    color: var(--white);
+    padding:  10px;
+    align-items: center;
+    border-radius: 60px;
+}
+.NavContainer ul input{
+    background-color: transparent;
+    border-radius: 50px;
+    padding:0 10px;
+    margin-left:  100px;
+    margin-right:  60px;
+    background-color: var(--gray-white);
+    border: 1px solid #b8b6b5;
+    width: 351px;
+    height: 56px;
+    outline: none;
+}
+.NavContainer ul #Cat{
+    background-color: var(--cart-green);
+    color: var(--white);
+    font-size: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+}
+#mobile i{
+    display: none;
+}
+@media screen and (max-width:850px) {
+    .NavContainer{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 88px;
+        
+        width: 100%;
+        background-color:var(--solo-white);
+        position: fixed;
+    }
+    .NavContainer ul{
+        display:flex;
+        flex-direction: column;
+        position: fixed;
+        /* text-align: center; */
+        line-height: 3rem;
+        top: 100px;
+        right: 100px;
+    }
+    .NavContainer ul input{
+        display: none;
+    }
+    .NavContainer ul #Cat{
+        border-radius: 40px;
+        background-color: none;
+        /* background-color: var(--cart-green);
+        color: var(--white);
+        font-size: 15px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60px; */
+    }
+    
+    
+    
+    
+    
+}
+/* .NavContainer ul  */
